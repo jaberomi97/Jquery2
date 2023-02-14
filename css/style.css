@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+nav{
+    background: rgb(172, 190, 248);
+}
+#menu .action{
+    animation-name: fixedMenu;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+}
+@keyframes fixedMenu { 
+    from{
+        top: 100px;
+        background: green;
+    }
+    to{
+        top: 0;
+        background: orange;
+    }
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    font-size: 20px;
+    color: brown;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    text-align: right;
+
+}
+nav ul li a:hover{
+    font-size: 20px;
+    color: rgb(241, 245, 11);
+}
+nav ul li button{
+    justify-content: center;
+}
+#banner{
+    background: url(../img/banner.jpg);
+    /* height: 800px; */
+    background-position: center;
+    background-size: cover; 
+}
+.banner_info{
+    width: 45%;
+    padding: 30px 10px;
+}
+.banner_info h1{
+    font-size: 32px;
+    color: black;
+    padding: 20px 10px;
+}
+.banner_info p{
+    font-size: 24px;
+    color: #444;
+    padding: 10px 10px;
+}
+#backtotop{
+    padding: 10px 15px;
+    background: rgb(5, 134, 48);
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
